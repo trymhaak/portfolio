@@ -3,7 +3,9 @@
 Norsk portefølje med et interaktivt arbeidsrom, sju prosjektpresentasjoner,
 arbeidserfaring og kontaktlenker.
 
-**Nettside:** https://trymhaak.github.io/portfolio/
+**Nettside:** https://trym.cloud/
+
+**GitHub Pages-speil:** https://trymhaak.github.io/portfolio/
 
 ## Kjør lokalt
 
@@ -30,6 +32,11 @@ visninger når hovedinnholdet har fokus. Prosjekter har delbare hash-lenker.
 Temavalg og animasjonspreferanse lagres lokalt. Redusert bevegelse respekteres.
 
 ## Publisering
+
+Trym.cloud publiseres fra nettstedets eksisterende Cloudflare Pages-prosjekt.
+Porteføljen importeres der som Astro-forside med `scripts/import-portfolio.mjs`,
+mens CV, tekniske notater, API-katalog og nyhetsfeed beholder adressene sine.
+Endringer her må også importeres og publiseres i trym.cloud-repoet.
 
 Push til `main` utløser GitHub Actions som kontrollerer JavaScript, bygger
 nettsiden og publiserer `dist/` til GitHub Pages. Build-scriptet bruker en

@@ -135,8 +135,8 @@ function route(initial = false) {
       }[id];
   document.title =
     id === "oversikt"
-      ? "Trym Håkansson — Fra idé til system."
-      : `${project?.name || { prosjekter: "Prosjekter", om: "Om meg", kontakt: "Kontakt" }[id]} — Trym Håkansson`;
+      ? "Trym Håkansson · Fra idé til system."
+      : `${project?.name || { prosjekter: "Prosjekter", om: "Om meg", kontakt: "Kontakt" }[id]} · Trym Håkansson`;
   closeMenu();
   if (!initial) {
     window.scrollTo({ top: 0, behavior: "instant" });
