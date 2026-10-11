@@ -1,0 +1,15 @@
+{
+  "name": "trym-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trym Håkansson — sikkerhet, produkter og agentiske systemer.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "check": "node --check app.js && node --check projects.js && node --check signal.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
