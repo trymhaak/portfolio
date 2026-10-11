@@ -1,5 +1,5 @@
-import { projects } from "./projects.js";
-import { createInstruments } from "./signal.js";
+import { projects } from "./projects.js?v=20261011-reference-2";
+import { createInstruments } from "./signal.js?v=20261011-reference-2";
 
 const $ = (selector) => document.querySelector(selector);
 const escapeHTML = (value) =>
@@ -162,7 +162,7 @@ function loadCode(source) {
   setTimeout(step, 650);
 }
 loadCode(fallbackCode);
-fetch("projects.js")
+fetch("projects.js?v=20261011-reference-2")
   .then((response) => {
     if (!response.ok) throw new Error("Source unavailable");
     return response.text();

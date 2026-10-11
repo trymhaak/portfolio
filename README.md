@@ -39,6 +39,9 @@ Trym.cloud publiseres fra nettstedets eksisterende Cloudflare Pages-prosjekt.
 Porteføljen importeres der som Astro-forside med `scripts/import-portfolio.mjs`,
 mens CV, tekniske notater, API-katalog og nyhetsfeed beholder adressene sine.
 Endringer her må også importeres og publiseres i trym.cloud-repoet.
+Ved endringer i JavaScript/CSS oppdateres den felles `v=`-versjonen i
+`index.html` og modulimportene i `app.js`, slik at tidligere besøkende
+ikke får gammel kode sammen med ny HTML.
 
 Push til `main` utløser GitHub Actions som kontrollerer JavaScript, bygger
 nettsiden og publiserer `dist/` til GitHub Pages. Build-scriptet bruker en

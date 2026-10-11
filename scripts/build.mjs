@@ -23,6 +23,6 @@ const html = await readFile(path.join(output, "index.html"), "utf8");
 const references = [...html.matchAll(/(?:src|href)="([^"#]+)"/g)]
   .map((match) => match[1])
   .filter((value) => !/^(https?:|mailto:)/.test(value));
-for (const reference of references) await readFile(path.join(output, reference));
+for (const reference of references) await readFile(path.join(output, reference.split(/[?#]/)[0]));
 const files = await readdir(output);
 console.log(`Built dist/: ${files.length} top-level entries. All HTML asset references resolve.`);
