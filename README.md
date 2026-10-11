@@ -21,14 +21,16 @@ npm run preview
 
 ## Rediger
 
-- `index.html`: presentasjon, erfaring, kontakt og grunnstruktur.
+- `index.html`: kodeinngang, terminal, prosjektvelger og dialoger.
 - `projects.js`: prosjektbeskrivelser, status, teknologi og lenker.
-- `styles.css`: responsiv layout, mørkt og lyst tema.
-- `app.js`: navigasjon, filtre og kommandomeny.
-- `signal.js`: original generativ nettverksillustrasjon.
+- `styles.css`: kompakt arbeidsrom, mobilvisning og fire fargetemaer.
+- `app.js`: terminalinnhold, skriveanimasjon, prosjektbue, koderedigering og kommandoer.
+- `signal.js`: original ASCII-øyefigur og reaktive hender/tastatur.
 
-`⌘ K` / `Ctrl K`, `/` eller `:` åpner kommandomenyen. `j` og `k` blar mellom
-visninger når hovedinnholdet har fokus. Prosjekter har delbare hash-lenker.
+`⌘ K` / `Ctrl K` og `/` åpner søket. `:` fokuserer terminalens kommandolinje.
+Skriv `help`, `open politipuls` eller `theme paper`. Piltaster og `j` / `k`
+bytter prosjekt i velgeren; piltaster i innholdet brukes til vanlig scrolling.
+Prosjekter har delbare hash-lenker. På mobil åpnes buen fra `~/Projects`.
 Temavalg og animasjonspreferanse lagres lokalt. Redusert bevegelse respekteres.
 
 ## Publisering
@@ -45,7 +47,7 @@ eksplisitt filliste. Lokale analysefiler og verktøy i `.local/` publiseres ikke
 ## Referanse og innhold
 
 Utformingen bygger på en undersøkelse av [hancore.dev](https://hancore.dev)
-med [REA](https://github.com/morluto/rea). Koden og nettverksillustrasjonen er
+med [REA](https://github.com/morluto/rea). Koden, prosjektkartet, øyet og håndillustrasjonene er
 skrevet for denne porteføljen. Se [analysen](docs/reference-analysis.md).
 
 Biografi og prosjektinnhold er kontrollert mot Tryms offentlige nettside,
@@ -57,5 +59,8 @@ Festivalbildet kommer fra Festivoos bildebibliotek. Bildene er ikke generelt
 lisensiert videre av denne kildekoden. IBM Plex Mono og Space Grotesk er
 selvhostet med sine SIL Open Font License-filer i `assets/fonts/`.
 
-Det brukes ingen analyseverktøy, sporingskapsler, eksterne fonter eller
-backend. Kontaktlenkene åpner de navngitte tjenestene.
+Kodeinngangen viser prosjektkoden og lar besøkeren skrive i en lokal kladd.
+Endringene kjøres ikke, lagres ikke og sendes ikke noe sted. Hender og øye
+reagerer på sidens tastatur og peker. Det brukes ingen kamera, analyseverktøy,
+sporingskapsler, eksterne fonter eller backend. Kontaktlenkene åpner de
+navngitte tjenestene.
